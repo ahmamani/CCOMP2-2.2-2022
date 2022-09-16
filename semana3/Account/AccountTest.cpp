@@ -37,6 +37,18 @@ int main() {
         << account1.getBalance();
     cout << "\naccount2: "<< account2.getName()<< " balance is $"
         << account2.getBalance()<<endl;
+
+    cout<<"\n\nEnter withdraw amount for account1: ";
+    int withdrawAmount;
+    cin>>withdrawAmount;
+    cout<< "withdraw -> "<<withdrawAmount<<" from account balance";
+    account1.withdraw(withdrawAmount);
+
+    cout << "\n\naccount1: "<< account1.getName()<< " balance is $"
+        << account1.getBalance();
+    cout << "\naccount2: "<< account2.getName()<< " balance is $"
+        << account2.getBalance()<<endl;
+
     return 0;
     
 }

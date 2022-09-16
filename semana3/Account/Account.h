@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 
 class Account {    
@@ -12,6 +13,14 @@ class Account {
         void deposit(int depositAmount) {
             if(depositAmount > 0) {
                 balance = balance + depositAmount;
+            }
+        }
+
+        void withdraw(int withdramAmount) {
+            if(withdramAmount > balance) {
+                std::cout << "Withdrawal amount exceeded account balance." << std::endl;
+            } else {
+                balance -= withdramAmount;
             }
         }
 
