@@ -8,7 +8,9 @@ IntArray::IntArray(int size) {
 
 IntArray::IntArray(const IntArray &o) {
     size = o.size;
-    data = o.data;
+    data = new int[o.size];
+    for(int i = 0; i < size; i++)
+        data[i] = o.data[i];
 }
 
 void IntArray::setAt(int index, int value) {
