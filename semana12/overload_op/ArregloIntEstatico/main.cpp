@@ -12,11 +12,7 @@ int main() {
 
     a.print();
 
-    cout << a << endl;
-
-    /*if(true) {
-        IntArray b = a;
-    }*/
+    cout << a << endl;    
  
     return 0;
 }
